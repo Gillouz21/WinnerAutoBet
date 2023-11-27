@@ -28,12 +28,12 @@ def winner_login(driver, username, password):
     input("Press any key to exit...")
 
 
-def main():
-    load_dotenv()
-    driver = webdriver.Chrome("D:\WinnerAutoBetResources\chromedriver-win64\chromedriver-win64\chromedriver.exe")
-    open_winner(driver)
-    winner_login(driver, os.getenv("WINNER_USERNAME"), os.getenv("WINNER_PASSWORD"))
+    def main():
+        load_dotenv()
+        driver = webdriver.Chrome("D:\WinnerAutoBetResources\chromedriver-win64\chromedriver-win64\chromedriver.exe")
+        open_winner(driver)
+        winner_login(driver, os.getenv("WINNER_USERNAME"), os.getenv("WINNER_PASSWORD"))
 
 
-if __name__ == "__main__":
-    main()
+    if __name__ == "__main__":
+        main()
